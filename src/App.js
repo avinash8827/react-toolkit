@@ -10,13 +10,13 @@ function App() {
   let dispatch = useDispatch();
   let addFund = ()=>{
    // alert("addFund")
-   let a = 
+   let a =  parseInt(prompt('Enter the ammount'));
    // alert(a);
     dispatch(addAmmount(a));
   }
   let withdrawFund = ()=>{
    // alert("withdrawFund")
-   let b = 
+   let b = parseInt(prompt('Enter the ammount'));
     // alert(b);
    dispatch(withdrawAmmount(b));
   }
