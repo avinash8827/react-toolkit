@@ -9,7 +9,7 @@ function App() {
   let store = useSelector(store=>store);
   let dispatch = useDispatch();
   let addFund = ()=>{
-   // alert("oojojo")
+   // alert("addFund")
    let a = 
    // alert(a);
     dispatch(addAmmount(a));
@@ -25,11 +25,8 @@ function App() {
   return (
     <div className="App">
      <h1>Redux Toolkit Assingment</h1>
-     <h1>Amaount {  store.rootReducer.value}</h1>
-     <input type="number"/>
+     <h1>Ammount {  store.rootReducer.value}</h1>
      <button onClick={(e)=>{addFund()}}> Add Ammount</button> 
-     <br/>
-     <input type="number"/>
      <button onClick={(e)=>{withdrawFund()}}>Withdraw Ammount</button>
 
     </div>
